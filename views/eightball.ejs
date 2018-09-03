@@ -7,10 +7,11 @@
 </head>
 <body>
   <h1>Eightball</h1>
+   <form action='/eightball' method='POST'>
    Question: <input type="text" name="question">
    <br>
-   <button type="button" onclick="getAnswer(question.value)">Ask question</button>
+   <button type="submit">Ask question</button>
    <br>
-   <b>{{answer}}</b>
+   </form>
 </body>
 </html>
