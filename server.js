@@ -13,7 +13,12 @@ app.use(express.static('public'));
 
 //Redirect to eightball
 app.get('/', (req, res) => {
-   return res.redirect('/eightball');
+   res.redirect('/eightball');
+});
+
+//Show the eightball form
+app.get('/eightball', (req, res) => {
+   res.render('eightball.ejs', {});
 });
 
 //Get answer
